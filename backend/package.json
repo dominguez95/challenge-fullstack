@@ -1,0 +1,31 @@
+{
+  "name": "api-challenge",
+  "version": "1.1.0",
+  "description": "Desarrllo de proyecto para challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --verbose index.js",
+    "test": "mocha 'test/**/*.test.js'"
+  },
+  "engines": {
+    "node": ">=14.0.0 <15.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "jsonwebtoken": "^9.0.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "mocha": "^11.7.5",
+    "standard": "^17.1.2",
+    "supertest": "^7.2.2"
+  }
+}
