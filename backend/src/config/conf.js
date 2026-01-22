@@ -19,7 +19,11 @@ class Config {
 
   routes() {
     this.app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
-    this.app.use("/files", require("../routers/files"));
+    this.app.get("/api-docs.json", (req, res) => {
+      res.setHeader("Content-Type", "application/json");
+      res.send(specs);
+    });
+    this.app.use("/files", require("../routers/files.js"));
   }
 
   execute() {
